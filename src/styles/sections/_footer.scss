@@ -1,0 +1,29 @@
+.footer {
+  margin-top: 30px;
+  padding: 70px 0 30px;
+
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.footer__list {
+}
+
+.footer__item {
+  &:not(:first-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__link {
+}
+
+.footer__item_title {
+  font-weight: 500;
+  margin-bottom: 10px;
+}

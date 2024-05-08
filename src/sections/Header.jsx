@@ -3,11 +3,25 @@ import React from "react";
 //components
 import HeaderNav from "../components/HeaderNav";
 
-const Header = ({ saved, isPopup, setIsPopup }) => {
+const Header = ({
+  name,
+  saved,
+  isPopup,
+  setIsPopup,
+  isPopupAcc,
+  setIsPopupAcc,
+}) => {
   return (
     <header className="header">
       <div className="container">
-        <HeaderNav saved={saved} isPopup={isPopup} setIsPopup={setIsPopup} />
+        <HeaderNav
+          setIsPopupAcc={setIsPopupAcc}
+          isPopupAcc={isPopupAcc}
+          name={name}
+          saved={saved}
+          isPopup={isPopup}
+          setIsPopup={setIsPopup}
+        />
         <div className="header__wrapper">
           <div className="header__wrapper_title">
             <h1 className="title1">
